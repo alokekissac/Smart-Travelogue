@@ -23,7 +23,7 @@ Admin login: `admin` / `admin` (fictional demo data, resets on restart)
 
 </div>
 
-![Admin: travellers' travelogues](docs/screenshots/adminviewtravaloges.jpg)
+![Smart Travelogue home page](docs/screenshots/home.jpg)
 
 ---
 
