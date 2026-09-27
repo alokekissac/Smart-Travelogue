@@ -7,8 +7,8 @@ __pycache__/
 debug.log
 
 # User uploads (not source code)
-web/static/uploads/
-web/static/blogs/
+public/static/uploads/
+public/static/blogs/
 
 # Database dumps with real data — use database/schema.sql instead
 *.sql
