@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.travelogue"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Travelogue"
+        tools:targetApi="31">
+        <service android:name=".LocationService" />
+
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            >
+        </activity>
+
+        <activity
+            android:name=".IPSetting"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Users_home"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_registration"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".User_update_images_files"
+            android:exported="false" >
+
+        </activity>
+        <activity android:name=".User_Send_feedback"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".User_view_notification"
+            android:exported="false" >
+        </activity>
+
+
+        <service android:name=".LocationService" >
+        </service>
+
+        <activity
+            android:name=".User_view_hotels"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_packages"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_manage_travelogue"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_add_interests"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_interested"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_suggestions"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_nearby_places"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_upload_files"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".Public_view_places"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Public_view_travelogue"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".Public_view_media"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_hotel_images"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_travelogue_images"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".User_view_sug_images"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".VideoPlay"></activity>
+        <activity
+            android:name=".Videos"></activity>
+
+
+
+        <activity
+            android:name=".MainActivity"
+
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
