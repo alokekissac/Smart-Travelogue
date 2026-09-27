@@ -6,6 +6,10 @@
 
 Native Android app for travellers · Flask + MySQL REST API · admin dashboard for content and notifications
 
+### [✈️ Live demo: smart-travelogue.vercel.app](https://smart-travelogue.vercel.app/)
+
+Admin login: `admin` / `admin` (fictional demo data, resets on restart)
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falokekissac%2FSmart-Travelogue&project-name=smart-travelogue)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
